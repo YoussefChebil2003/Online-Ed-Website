@@ -1,0 +1,349 @@
+/* search input */
+
+#search-input{
+    position: absolute;
+    top: 25;
+    left: 100;
+    border: solid;
+    width: 90%;
+}
+
+#search-input form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: center;
+}
+
+.name-search{
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.search-bar{
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 0.5em;
+    border-radius: 5px;
+    width: 300px;
+    /*background-image: url(../img/search-icon.png) no-repeat scroll 7px 7px; */
+}
+
+.search-icon, .professor-search-icon{
+    width:50;
+    height: 50;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.advanced-search{
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+}
+
+.top-specifics{
+   display: flex;
+   flex-direction: row;
+}
+.bottom-specifics{  
+    display: flex;
+    flex-direction: row;    
+}
+
+  /* dropbox styles */
+
+
+.dropbox{
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-left: 5px ;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    width: 170px;
+    position: relative;
+}
+
+.dropbox:active{
+    display: flex;
+    flex-direction: column;
+}
+
+.select{
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: solid;
+    border-width: 1.5px;
+    padding: 0.4em 0.5em;
+    transition: background 0.3s;
+}
+
+.selected{
+    font-size: 15px;
+}
+
+.select-clicked{
+    border: 2px #26489a solid;
+    box-shadow: 0 0 0.8em #26489a;
+}
+
+.select:hover{
+    background: #323741; 
+    color: white;
+    caret-color: white;
+}
+
+.select a:visited{
+    color: unset;
+}
+
+.caret{
+    transition: 0.3s;
+}
+
+.dropdown-menu{
+    list-style: none;
+    padding: 5px 15px 5px 15px;
+    background: #323741;
+    text-decoration: none;
+    box-shadow: 0 0.5em 1em rgba(0,0,0,0.2);
+    border-radius: 5px;
+    color: #9fa5b5;
+    position: absolute;
+    top: 2.5em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.dropdown-menu li{
+    padding: 0.3em 0.3em;
+    margin: 0.3em 0;
+    border-radius: 5px;   
+}
+
+.dropdown-menu li a{
+   color: white;
+   font-size: 15px;
+   text-decoration: none;
+}
+
+.dropdown-menu li a:visited{
+    color: white;
+}
+
+.dropdown-divider{
+    background-color: white;
+    opacity: 100%;
+    height: 1px;
+    border: 0;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+
+
+.dropdown-menu li:hover{
+    background: #2a2d35;
+}
+
+    /* rotating style (added in javascript)  */
+
+.caret-rotate{
+    transform: rotate(180deg);
+}
+
+    /*  active style (added in javascript) */
+
+.active{
+    background: #23242a;
+}
+
+    /* open styles (added in javascript) */
+
+.dropdown-menu-open {
+    display: block;
+    opacity: 1;
+}
+
+/* search output */
+
+#search-output{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 175;
+    border: solid blue;
+    left: 100;
+    width: 90%;
+}
+
+#search-output h2{
+    padding: 5px;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.professor-cards{
+    display: flex;
+    justify-content: center;
+}
+
+.search-result-box{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,278px);
+    gap: 15px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.professor-box{
+    background-color: white;
+    display: table;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    padding: 0.75em;
+    height: 400px;
+}
+
+.professor-image{
+    display: flex;
+    justify-content: center;
+}
+
+.professor-image img{
+    width: 230px;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.professor-name{
+    margin-bottom: 0.3em;
+}
+
+.professor-name h3{
+    font-size: 25px;
+    font: bold;
+}
+
+.professor-subjects{
+    margin-bottom: 0.3em;
+}
+
+.professor-bio{
+    margin-bottom: 0.3em;
+}
+
+.professor-rating{
+    display: flex;
+    align-items: center;
+}
+
+
+/* screen resolution changes */
+
+    /* for search input options */
+
+@media (max-width: 1800px) {
+    /*same as top (no need to specify) */  
+}
+  
+@media (max-width: 915px) {
+    #search-input-box{
+      align-self: center;
+    }
+    #search-input-box form{
+        flex-direction: column;
+    }
+    .name-search{
+        align-self: center;
+        margin-bottom: 10px;
+    }
+    .search-bar{
+        align-self: center;
+    }
+    .advanced-search{
+        align-self: center;
+    }
+}
+  
+@media (max-width: 760px) {
+    #search-output{
+        top: 200;
+    }
+    .advanced-search{
+        display: flex;
+        flex-direction: column;
+    }
+    .dropbox{
+        width: 200px;
+    }
+    .top-specifics{
+        display: flex;
+    }
+    .bottom-specifics{
+        display: flex;
+    }
+      
+}
+  
+@media (max-width: 500px) {
+      #search-output{
+          top: 300;
+      }
+      .advanced-search{
+          display: flex;
+          flex-direction: column;
+      }
+     .top-specifics{
+          display: flex;
+          flex-direction: column;
+     }
+     .bottom-specifics{
+          display: flex;
+          flex-direction: column;
+     }
+      
+}
+
+    /* for professor cards */
+
+@media (max-width:1320px) {
+    .search-result-box{
+        margin-left: 25px;
+        margin-right: 25px;
+        grid-template-columns: repeat(3,285px);
+    }
+}
+
+@media (max-width:1025px) {
+    .search-result-box{
+        margin-left: 35px;
+        margin-right: 35px;
+        grid-template-columns: repeat(2,285px);
+    }
+}
+
+@media (max-width:675px) {
+    #search-output h2{
+        align-self: center;
+    }
+    .search-result-box{
+        margin-left: 45px;
+        margin-right: 45px;
+        grid-template-columns: repeat(1,285px);
+    }
+}

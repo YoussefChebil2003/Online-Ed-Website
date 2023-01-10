@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login{
+    position: relative;
+    margin: 50px;
+    width: 80%;
+    height: 100%;
+    background-image: url(../img/graduated-girl-authpages-background.jpg);
+    background-size: cover;
+}
+
+.login-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    position: absolute;
+    right: 50;
+    bottom: 90;
+    width: 300px;
+    height: 400px;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+    background-color: #E25151;
+    justify-content: center;
+}
+
+.login-box form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box h2{
+    font-size: 40px;
+}
+
+.login-box label{
+    font-size: 20px;
+}
+
+.login-box input{
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    padding: 2px;
+}

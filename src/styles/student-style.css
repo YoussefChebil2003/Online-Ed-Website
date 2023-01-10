@@ -1,0 +1,96 @@
+/* student nav */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    outline: none;
+}
+
+body{
+    background-color: rgb(194, 194, 235);
+}
+
+nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background: #fff;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0,0,0,0);
+    z-index: 1;
+}
+
+.logo{
+    text-align: center;
+    display: flex;
+    margin: 10px 0 25px 10px;
+    transition: all 0.5s ease;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav a{
+    cursor: pointer;
+    position: relative;
+    display: table;
+    font-size: 15px;
+    width: 300px;
+    padding: 15px;
+}
+
+nav a:visited{
+    text-decoration: none;
+    color: blue;
+}
+
+nav .bi{
+    position: relative;
+    top:3px;
+    width: 70px;
+    height: 40px;
+    font-size: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+nav span{
+    align-self: center;
+    margin-left: 10px;
+}
+
+nav a:hover{
+    background: #eee;
+}
+
+nav:hover{
+    width: 250px;
+    transition: all 0.5 ease;
+}
+
+nav .logout{
+    position: absolute;
+    bottom: 0;
+}
