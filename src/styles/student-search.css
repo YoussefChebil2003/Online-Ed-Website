@@ -1,11 +1,27 @@
-/* search input */
 
-#search-input{
+#search{
     position: absolute;
     top: 25;
     left: 100;
     border: solid;
     width: 90%;
+    height: 100%;
+}
+
+
+/* ------------------------------------------------------------------------search input---------------------------------------------------------------- */
+
+
+#search-input{
+    
+    align-self: center;
+    border: solid;
+    /*
+    position: absolute;
+    top: 25;
+    left: 100;
+    width: 90%;*/
+    
 }
 
 #search-input form{
@@ -17,10 +33,15 @@
 }
 
 .name-search{
+    position: relative;
     vertical-align: middle;
     display: flex;
     align-items: center;
     margin-bottom: 2em;
+    margin-top: 2em;
+    border: solid;
+    width: 80%;
+    height: 40%;
 }
 
 .search-bar{
@@ -28,15 +49,15 @@
     font-size: 15px;
     padding: 0.5em;
     border-radius: 5px;
-    width: 300px;
+    width: 75%;  
     /*background-image: url(../img/search-icon.png) no-repeat scroll 7px 7px; */
 }
 
 .search-icon, .professor-search-icon{
-    width:50;
+    width: 50;
     height: 50;
-    margin-right: 15px;
     margin-left: 15px;
+    margin-right: 15px;
 }
 
 .advanced-search{
@@ -176,16 +197,17 @@
     opacity: 1;
 }
 
-/* search output */
+/* ------------------------------------------------------------------------search output---------------------------------------------------------------- */
 
 #search-output{
+    margin-top: 1em;
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 175;
     border: solid blue;
+    flex-direction: column;
+    /*position: absolute;
+    top: 175;
     left: 100;
-    width: 90%;
+    width: 90%;*/
 }
 
 #search-output h2{
@@ -301,21 +323,30 @@
 }
   
 @media (max-width: 500px) {
-      #search-output{
-          top: 300;
-      }
-      .advanced-search{
-          display: flex;
-          flex-direction: column;
-      }
-     .top-specifics{
-          display: flex;
-          flex-direction: column;
-     }
-     .bottom-specifics{
-          display: flex;
-          flex-direction: column;
-     }
+    .search-bar{
+        width: 100%;
+    }
+    #search-input img{
+        display: none;
+    }
+    .search-bar{
+       /*margin: auto;*/
+    }
+    #search-output{
+        top: 300;
+    }
+    .advanced-search{
+        display: flex;
+        flex-direction: column;
+    }
+    .top-specifics{
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom-specifics{
+        display: flex;
+        flex-direction: column;
+    }
       
 }
 

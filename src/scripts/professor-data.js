@@ -1,7 +1,8 @@
 let professorData = [{
     id:"one",
     gender: "male",
-    name:"John Doe",
+    firstName:"John",
+    lastName: "Doe",
     subjects: ["Mathematics","Physics"],
     priceRange: "40-60",
     groupOrOneToOne: "1", //1 for group only, 2 for 1to1 only, 3 for both
@@ -13,7 +14,8 @@ let professorData = [{
 }, {
     id:"one",
     gender: "male",
-    name:"John Doe",
+    firstName:"John",
+    lastName: "Doe",
     subjects: ["Mathematics","Physics"],
     priceRange: "40-60",
     groupOrOneToOne: "1", //1 for group only, 2 for 1to1 only, 3 for both
@@ -25,7 +27,8 @@ let professorData = [{
 }, {
     id:"one",
     gender: "male",
-    name:"John Doe",
+    firstName:"John",
+    lastName: "Doe",
     subjects: ["Mathematics","Physics"],
     priceRange: "40-60",
     groupOrOneToOne: "1", //1 for group only, 2 for 1to1 only, 3 for both
@@ -37,7 +40,8 @@ let professorData = [{
 }, {
     id:"one",
     gender: "male",
-    name:"John Doe",
+    firstName:"John",
+    lastName: "Doe",
     subjects: ["Mathematics","Physics"],
     priceRange: "40-60",
     groupOrOneToOne: "1", //1 for group only, 2 for 1to1 only, 3 for both

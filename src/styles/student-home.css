@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+#home{
+    border: solid;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    position: relative;
+    width: 630px;
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:solid black;
+    margin-left: 15px;
+}
+
+.menu li{
+    position: absolute;
+    left: 10;
+    list-style: none;
+    transition: 0.5s;
+    transform: rotate(0deg) translateX(225px);
+    transform-origin: 300px;
+    transition-delay: calc(0.1s * var(--i));
+}
+.menu.active li{
+    transform: rotate(calc(360deg / 8 * var(--i))) translateX(0px);
+}
+.menu li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    color: var(--clr);
+    border: 2px solid var(--clr);
+    border-radius: 50%;
+    font-size: 5em;
+    transform: rotate(calc(360deg / -8 * var(--i)));
+    transition: 1s;
+}
+.menu li a:hover{
+    transition: 0s;
+    background: var(--clr);
+    box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr), 0 0 50px var(--clr);
+    color: #333;
+}
+
+.menu .toggle{
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    border: 2px solid #fff;
+    background-color: blue;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 6em;
+    transition: transform 1.25s;
+}
+
+.menu.active .toggle{
+    transform: rotate(315deg);
+}
+
+.home-logout{
+    position: absolute;
+    bottom: 0;
+    right: 5;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.home-logout li{
+    color: black;
+}
+
+.home-logout a:visited{
+    color: initial;
+}
+
+@media (max-width: 540px){
+    .menu .toggle{
+        
+    }
+    .menu li{
+        position: absolute;
+        left: 10;
+        list-style: none;
+        transition: 0.5s;
+        transform: rotate(0deg) translateX(125px);
+        transform-origin: 250px;
+        transition-delay: calc(0.1s * var(--i));
+    }
+}
+
+@media (max-width: 730px){
+    .menu li{
+        position: absolute;
+        left: 10;
+        list-style: none;
+        transition: 0.5s;
+        transform: rotate(0deg) translateX(200px);
+        transform-origin: 250px;
+        transition-delay: calc(0.1s * var(--i));
+    }
+}
+
+
+
+
+
+

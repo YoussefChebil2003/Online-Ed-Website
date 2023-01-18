@@ -60,14 +60,17 @@ dropboxes.forEach(dropbox => {
 
 let generateOutputSearchBox = () => {
     return (searchResultBox.innerHTML= professorData.map((x)=>{
-        let {id,gender,name,subjects,priceRange,groupOrOneToOne,bio,email,phoneNumber,rating,img} = x;
+        let {id,gender,firstName,lastName,subjects,priceRange,groupOrOneToOne,bio,email,phoneNumber,rating,img} = x;
+        var title;
+        if (gender="male") title = "Mr."
+        else title = "Ms.";
         return `
         <div id= "professor-${id}" class="professor-box">
             <div class="professor-image">
                 <img src=${img}>
             </div>
             <div class="professor-name">
-                <h3 class="professor-name">${name}</h3>
+                <h3 class="professor-name">${title+" "+ firstName+" "+lastName}</h3>
             </div>
             <div class="professor-subjects">
                 <!--add subjects from list of subjects (h4)-->
