@@ -104,29 +104,29 @@ h2{
 /*------------------------------------------------------------------responsive design--------------------------------------------------------------*/
 
 
-@media (max-width: 935px) {
+@media (max-width: 1250px) {
     #arrow-courses-left{
-        left: 5vh;
+        left: 5%;
     }
     
     #arrow-courses-right{
-        right: 5vh;
+        right: 5%;
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 1050px) {
     #course-selection{
         column-gap: 5vh;
     }
 }
 
-@media (max-width: 705px) {
+@media (max-width: 950px) {
     #course-selection{
         grid-template-columns: repeat(2,30vh);
     }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 780px) {
     #course-selection{
         grid-template-columns: repeat(2,25vh);
     }
@@ -140,7 +140,7 @@ h2{
     }
 }
 
-@media (max-width: 525px) {
+@media (max-width: 670px) {
     #course-selection{
         grid-template-columns: repeat(1,40vh);
     }
@@ -154,7 +154,7 @@ h2{
     }
 }
 
-@media (max-width: 435px) {
+@media (max-width: 500px) {
     #course-selection{
         grid-template-columns: repeat(1,25vh);
     }
@@ -166,6 +166,35 @@ h2{
     .course-directories a{
         font-size: 25px;
     }
+   
 }
+
+@media (max-width: 380px) {
+    #arrow-courses-left{
+        font-size: 37.5px;
+        left: 2.5%;
+    }
+    
+    #arrow-courses-right{
+        font-size: 37.5px;
+        right: 2.5%;
+    }
+}
+
+@media (max-width: 335px) {
+    #arrow-courses-left i, #arrow-courses-right i{
+        font-size: 32.5px;
+    }
+}
+
+
+@media (max-width: 300px) {
+    #arrow-courses-left, #arrow-courses-right{
+      display: none;
+    }
+    
+}
+
+
 
 
