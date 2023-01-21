@@ -1,31 +1,39 @@
-#courses{
-    position: absolute;
-    top: 25;
-    left: 100;
-    border: solid;
-    width: 90%;
-    height: 100%;
-}
-
 h2{
     text-align: center;
     padding: 0.5em;
 }
 
-.course-box{
-    border: solid;
-    box-sizing: border-box;
-    width: 40%;
-    height: 30%;
-    margin-left: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#course-selection{
     justify-content: center;
+    position: absolute;
+    right: 35%;
+    left: 35%;
+    margin-top: 8vh;
+    display: grid;
+    grid-template-columns: repeat(2,40vh);
+    row-gap: 5vh;
+    column-gap: 15vh;
+}
+
+/*--------------------------------------------------------------------course box-------------------------------------------------------------------*/
+
+.course-box{
+    padding: 1em;
+    box-sizing: border-box;
+    border: solid;
+    border-radius: 15px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 35vh;
+    background-image: url(../img/defaultclasslogo.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
 .course-pic{
-    background-color: blueviolet;
     color: white;
     width: 80%;
     height:70%;
@@ -33,21 +41,131 @@ h2{
     justify-content: center;
 }
 
-.course-pic i{
-    font-size: 6em;
+.course-pic img{
+    border-radius: 5px;
+}
+
+.course-box-add-ons{
+    background: white;
+    z-index: 0;
+    position: absolute;
+    bottom: 10;
+    height: 25%;
+    justify-content: center;
+    border: solid black;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-credentials{
+    margin-left: 0.3em;
 }
 
 .course-directories{
     display: flex;
     justify-content: center;
+    margin-right: 0.3em;
 }
 
 .course-directories li{
     font-size: 5em;
 }
 
-.course-directories button{
+.course-directories a{
     font-size: 2em;
     margin-left: 2.5px;
     margin-right: 2.5px;
 }
+
+/* ---------------------------------------------------------------course page traversal buttons---------------- -----------------------------------*/
+
+#arrow-courses-left{
+    position: absolute;
+    top: 50vh;
+    left: 15vh;
+}
+
+#arrow-courses-right{
+    position: absolute;
+    top: 50vh;
+    right:15vh;
+}
+
+#arrow-courses-right i, #arrow-courses-left i{
+    font-size: 45px;
+}
+
+#arrow-courses-right i:hover, #arrow-courses-left i:hover{
+    font-size: 55px;
+}
+
+/*------------------------------------------------------------------responsive design--------------------------------------------------------------*/
+
+
+@media (max-width: 935px) {
+    #arrow-courses-left{
+        left: 5vh;
+    }
+    
+    #arrow-courses-right{
+        right: 5vh;
+    }
+}
+
+@media (max-width: 770px) {
+    #course-selection{
+        column-gap: 5vh;
+    }
+}
+
+@media (max-width: 705px) {
+    #course-selection{
+        grid-template-columns: repeat(2,30vh);
+    }
+}
+
+@media (max-width: 580px) {
+    #course-selection{
+        grid-template-columns: repeat(2,25vh);
+    }
+    .course-box-add-ons{
+        bottom: 2;
+        flex-direction: column;
+        height: 40%;
+    }
+    .course-directories a{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 525px) {
+    #course-selection{
+        grid-template-columns: repeat(1,40vh);
+    }
+    .course-box-add-ons{
+        bottom: 10;
+        flex-direction: row;
+        height: 25%;
+    }
+    .course-directories a{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 435px) {
+    #course-selection{
+        grid-template-columns: repeat(1,25vh);
+    }
+    .course-box-add-ons{
+        bottom: 2;
+        flex-direction: column;
+        height: 40%;
+    }
+    .course-directories a{
+        font-size: 25px;
+    }
+}
+
+

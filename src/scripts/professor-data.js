@@ -1,5 +1,5 @@
 let professorData = [{
-    id:"one",
+    id:"P1",
     gender: "male",
     firstName:"John",
     lastName: "Doe",
@@ -10,9 +10,10 @@ let professorData = [{
     email:"johndoe@gmail.com",
     phoneNumber: "51234789",
     rating: "3.5",
-    img: "src/img/professor-example1.jpg" 
+    img: "src/img/professor-example1.jpg",
+    //accountList: getAccountList(id),
 }, {
-    id:"one",
+    id:"P2",
     gender: "male",
     firstName:"John",
     lastName: "Doe",
@@ -23,9 +24,10 @@ let professorData = [{
     email:"johndoe@gmail.com",
     phoneNumber: "51234789",
     rating: "3.5",
-    img: "src/img/professor-example1.jpg" 
+    img: "src/img/professor-example1.jpg" ,
+    //accountList: getAccountList(id),
 }, {
-    id:"one",
+    id:"P3",
     gender: "male",
     firstName:"John",
     lastName: "Doe",
@@ -36,9 +38,10 @@ let professorData = [{
     email:"johndoe@gmail.com",
     phoneNumber: "51234789",
     rating: "3.5",
-    img: "src/img/professor-example1.jpg"  
+    img: "src/img/professor-example1.jpg"  ,
+    //accountList: getAccountList(id),
 }, {
-    id:"one",
+    id:"P4",
     gender: "male",
     firstName:"John",
     lastName: "Doe",
@@ -49,8 +52,12 @@ let professorData = [{
     email:"johndoe@gmail.com",
     phoneNumber: "51234789",
     rating: "3.5",
-    img: "src/img/professor-example1.jpg" 
+    img: "src/img/professor-example1.jpg",
+    //accountList: getAccountList(id),
 }
 
-
 ];
+
+let getAccountList = () => {
+
+}

@@ -14,83 +14,123 @@ body{
 }
 
 nav{
+    display: none;
+}
+
+
+.menu-list{
+    min-width:100%;
+    display: block;
     position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    background: #fff;
-    width: 90px;
-    overflow: hidden;
-    transition: width 0.2s linear;
-    box-shadow: 0 20px 35px rgba(0,0,0,0);
     z-index: 1;
-}
-
-.logo{
-    text-align: center;
-    display: flex;
-    margin: 10px 0 25px 10px;
-    transition: all 0.5s ease;
-}
-
-.logo img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.logo span{
-    font-weight: bold;
-    padding-left: 15px;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-
-nav li{
-    list-style: none;
-}
-
-nav a{
-    cursor: pointer;
-    position: relative;
-    display: table;
-    font-size: 15px;
-    width: 300px;
-    padding: 15px;
-}
-
-nav a:visited{
-    text-decoration: none;
-    color: blue;
-}
-
-nav .bi{
-    position: relative;
-    top:3px;
-    width: 70px;
-    height: 40px;
-    font-size: 25px;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-nav span{
-    align-self: center;
-    margin-left: 10px;
-}
-
-nav a:hover{
-    background: #eee;
-}
-
-nav:hover{
-    width: 250px;
-    transition: all 0.5 ease;
-}
-
-nav .logout{
-    position: absolute;
     bottom: 0;
+    text-align: center;
+    background-color: white;
+}
+
+.menu-list a{
+    cursor: pointer;
+}
+
+.menu-list i{
+    font-size: 40px;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+}
+
+
+
+@media (min-width: 600px) and (min-height:600px) {
+    .menu-list{
+        display: none;
+    }
+    #student-content{
+        position: absolute;
+        top: 25;
+        left: 100;
+        border: solid;
+        width: 90%;
+        height: 100%;
+    }
+    nav{
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        min-height: 100%;
+        background: #fff;
+        width: 90px;
+        overflow: hidden;
+        transition: width 0.2s linear;
+        box-shadow: 0 20px 35px rgba(0,0,0,0);
+        z-index: 1;
+    }
+    
+    .logo{
+        text-align: center;
+        display: flex;
+        margin: 10px 0 25px 10px;
+        transition: all 0.5s ease;
+    }
+    
+    .logo img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    
+    .logo span{
+        font-weight: bold;
+        padding-left: 15px;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    nav li{
+        list-style: none;
+    }
+    
+    nav a{
+        cursor: pointer;
+        position: relative;
+        display: table;
+        font-size: 15px;
+        width: 300px;
+        padding: 15px;
+    }
+    
+    nav a:visited{
+        text-decoration: none;
+        color: blue;
+    }
+    
+    nav .bi{
+        position: relative;
+        top: 3px;
+        font-size: 25px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    
+    nav span{
+        align-self: center;
+        margin-left: 10px;
+    }
+    
+    nav a:hover{
+        background: #eee;
+    }
+    
+    nav:hover{
+        min-width: 40vh;
+        transition: all 0.5 ease;
+    }
+    
+    nav .logout{
+        position: absolute;
+        bottom: 0;
+    }
+    
 }
