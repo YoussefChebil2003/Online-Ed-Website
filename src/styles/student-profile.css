@@ -1,0 +1,71 @@
+#profile.div{
+
+}
+
+h3,h4,h5{
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
+}
+
+
+
+
+.line{
+    height: 3px;
+    width: 75%;
+    font-size: 10px;
+    background-color: black;
+    opacity: 100%;
+    border: 0;
+    margin-bottom: 1em;
+}
+
+/*--------------------------------------------------basic info----------------------------------------*/
+
+.basic-info{
+    text-align: center;
+}
+
+.profile-img img{ 
+    max-width: 25%;
+    max-height: 25%;
+    min-width: 18%;
+    min-height: 18%;
+    border-radius: 50%;
+    background: white;
+}
+
+.profile-name-age{
+    
+}
+
+/*--------------------------------------------------advanced info----------------------------------------*/
+.advanced-info{
+    display: flex;
+    margin-top: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.left-advanced{
+    padding: 0.5em;
+    border:solid red;
+}
+
+.right-advanced{
+    padding: 0.7em;
+    border: solid blue;
+    position: relative;
+}
+
+.right-advanced i{
+    width: 80px;
+    height: 80px;
+    color: blue;
+}
+
+.social-media{
+    position: absolute;
+    bottom: 0;
+    right: 7.5;
+}
